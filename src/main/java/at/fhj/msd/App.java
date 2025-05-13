@@ -68,6 +68,36 @@ public class App {
         System.out.println("Min of text: " + MinTextCom);
         System.out.println("Min of text2: " + MinText2Com);
 
+        System.out.println("-----------------");
+        System.out.println("Max Age: ");
+        List<Human> humans = Arrays.asList(
+                new Human("Alice", 30),
+                new Human("Bob", 25),
+                new Human("Charlie", 35),
+                new Human("Diana", 28),
+                new Human("Edward", 40),
+                new Human("Fiona", 32),
+                new Human("George", 24),
+                new Human("Helen", 45),
+                new Human("Isaac", 29),
+                new Human("Jack", 38),
+                new Human("Katherine", 50),
+                new Human("Louis", 22),
+                new Human("Mona", 36),
+                new Human("Nina", 33),
+                new Human("Oscar", 26),
+                new Human("Paul", 27),
+                new Human("Quincy", 31),
+                new Human("Rachel", 34),
+                new Human("Steve", 42)
+        );
+
+        Human maxAge = max(humans);
+        Human minAge = min(humans);
+
+        System.out.println(maxAge.toString());
+        System.out.println(minAge.toString());
+
     }
 
     //? Max and Min Method
